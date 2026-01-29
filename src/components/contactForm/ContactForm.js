@@ -70,6 +70,14 @@ const ContactForm = () => {
   const [messageText, setMessageText] = useState('')
 
   const classes = useStyles()
+  
+  // Internationalization-ready labels
+  const EMAIL_LABEL = 'Email'
+  const MESSAGE_LABEL = 'Message'
+  const SUBMIT_BUTTON_TEXT = 'Submit'
+  const SUCCESS_MESSAGE = 'Thanks!'
+  const ERROR_MESSAGE = 'Ooops! There was an error.'
+  const MESSAGE_ROWS = "5"
 
   const submitForm = (ev) => {
     ev.preventDefault()
@@ -114,7 +122,7 @@ const ContactForm = () => {
           className={classes.email}
           type="email"
           name="email"
-          label="Email"
+          label={EMAIL_LABEL}
           value={emailText}
           onChange={handleEmailChange}
           variant="filled"
@@ -123,21 +131,21 @@ const ContactForm = () => {
           className={classes.message}
           type="text"
           name="message"
-          label="Message"
+          label={MESSAGE_LABEL}
           value={messageText}
           onChange={handleMessageChange}
           multiline
-          rows="5"
+          rows={MESSAGE_ROWS}
           variant="filled"
         />
         {status === 'SUCCESS' ? (
-          <p className="email-success">Thanks!</p>
+          <p className="email-success">{SUCCESS_MESSAGE}</p>
         ) : (
           <Button className={classes.submit} type="submit" variant="contained">
-            Submit
+            {SUBMIT_BUTTON_TEXT}
           </Button>
         )}
-        {status === 'ERROR' && <p>Ooops! There was an error.</p>}
+        {status === 'ERROR' && <p>{ERROR_MESSAGE}</p>}
       </form>
     </div>
   )
