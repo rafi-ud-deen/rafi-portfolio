@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/rafi-portfolio/static/css/main.e9627a00.css",
+    "main.js": "/rafi-portfolio/static/js/main.e190545e.js",
+    "static/media/profile.jpeg": "/rafi-portfolio/static/media/profile.f96cad69b11a87c15a95.jpeg",
+    "static/media/bartini.png": "/rafi-portfolio/static/media/bartini.51561d1e843027c23426.png",
+    "static/media/cactus.png": "/rafi-portfolio/static/media/cactus.403f8ec36b5056a51698.png",
+    "static/media/cabbagetreelandscape.png": "/rafi-portfolio/static/media/cabbagetreelandscape.57d01b9d602c7d6e22af.png",
+    "static/media/psykinetic.png": "/rafi-portfolio/static/media/psykinetic.e85af239acc04da0e4b1.png",
+    "static/media/cactuscan.png": "/rafi-portfolio/static/media/cactuscan.09750b586197b59e13df.png",
+    "static/media/8secondz.png": "/rafi-portfolio/static/media/8secondz.fe81f70981db868fbcd2.png",
+    "index.html": "/rafi-portfolio/index.html",
+    "main.e9627a00.css.map": "/rafi-portfolio/static/css/main.e9627a00.css.map",
+    "main.e190545e.js.map": "/rafi-portfolio/static/js/main.e190545e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9627a00.css",
+    "static/js/main.e190545e.js"
+  ]
+}
